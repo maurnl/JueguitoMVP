@@ -1,15 +1,6 @@
-﻿using Biblioteca.Modelos;
-using Biblioteca.Presentadores;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Vista.Properties;
+﻿using Library.Models;
+using Library.Presenters;
+using Views.Properties;
 
 namespace Vista
 {
@@ -109,16 +100,16 @@ namespace Vista
             }
         }
 
-        public void RemoveEntity(EntityBase entidad)
+        public void RemoveEntity(EntityBase entity)
         {
             if (InvokeRequired)
             {
-                Action<EntityBase> eliminarEntidad = RemoveEntity;
-                Invoke(eliminarEntidad, entidad);
+                Action<EntityBase> removeEntityAction = RemoveEntity;
+                Invoke(removeEntityAction, entity);
             } else
             {
-                this.Controls.Remove(this.entitiesRenders[entidad]);
-                this.entitiesRenders.Remove(entidad);
+                this.Controls.Remove(this.entitiesRenders[entity]);
+                this.entitiesRenders.Remove(entity);
             }
         }
     }

@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Biblioteca.Modelos
+namespace Library.Models
 {
     public class Shark : EntityBase
     {
-        public Shark(Point posicionInicial, Size tamanio, int velocidad) : base(posicionInicial, tamanio, velocidad)
+        public Shark(Point initialPosition, Size size, int speed) : base(initialPosition, size, speed)
         {
             this.facingDirection = 'e';
         }

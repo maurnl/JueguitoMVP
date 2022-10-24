@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace Biblioteca.Modelos
+namespace Library.Models
 {
     public abstract class EntityBase
     {

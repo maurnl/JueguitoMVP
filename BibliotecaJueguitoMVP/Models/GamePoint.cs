@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Biblioteca.Modelos
+namespace Library.Models
 {
     public class GamePoint : EntityBase
     {
-        public GamePoint(Point posicionInicial, Size tamanio) : base(posicionInicial, tamanio, 0)
+        public GamePoint(Point intialPosition, Size size) : base(intialPosition, size, 0)
         {
         }
     }

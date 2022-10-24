@@ -1,7 +1,7 @@
-﻿using Biblioteca.Modelos;
+﻿using Library.Models;
 using System.Drawing;
 
-namespace Biblioteca.Presentadores
+namespace Library.Presenters
 {
     public class GamePresenter : IGameView
     {
@@ -34,7 +34,6 @@ namespace Biblioteca.Presentadores
                 return this.gameView.ScreenSize;
             }
         }
-
 
         private void Loop()
         {

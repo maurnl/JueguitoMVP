@@ -1,4 +1,4 @@
-﻿using Biblioteca.Modelos;
+﻿using Library.Models;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -6,13 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Biblioteca.Presentadores
+namespace Library.Presenters
 {
     public interface IGameView
     {
         public Size ScreenSize { get; }
-        void RenderEntity(EntityBase entidad);
-        void RemoveEntity(EntityBase entidad);
-        void ChangePlayerFacingDirection(char direccion);
+        void RenderEntity(EntityBase entity);
+        void RemoveEntity(EntityBase entity);
+        void ChangePlayerFacingDirection(char direction);
     }
 }
